@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+ul {
+    list-style: none;
+}
+
+.header-section {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 1.5rem 3rem;
+    gap: 1.5rem;
+}
+
+.header-section .searchbar-section {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+}
+
+.header-section .user-section {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    justify-items: center;
+}
+
+.header-section .welcome-section {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.welcome-section .welcome-holder {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.welcome-section .text-holder {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.welcome-section .action-buttons {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.action-button {
+    background-color: #1992d4;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 1.5rem;
+    text-align: center;
+}
+
+.sidebar {
+    background-color: #1992d4;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding: 2rem;
+    color: white;
+}
+
+.sidebar .logo-section {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+
+.sidebar .nav-buttons {
+    display: grid;
+    font-size: 1.2rem;
+    gap: 1.5rem;
+}
+
+.copyright {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.body-container {
+    height: calc(100vh - 9rem);
+    background-color: #e2e8f0;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.project-container {
+    grid-column: 1/3;
+    grid-row: 1/4;
+    display: grid;
+    grid-template-columns: minmax(100px,1fr) minmax(100px,1fr);
+    grid-template-rows: 0.1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.project-container h3 {
+    grid-column: 1/3;
+    margin-bottom: 0.5rem;
+}
+
+.project-card {
+    background-color: whitesmoke;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border-left: 8px solid #f0b429;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-card-header {
+    margin-bottom: 0.5rem;
+}
+
+.project-card-body {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.project-card-icons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-end;
+}
+
+.rest-section {
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 1/4;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+
+.announcements-container {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    gap: 1rem;
+}
+
+.announcement-container {
+    background-color: whitesmoke;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.announcement {
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.announcement:last-child {
+    border-bottom: none;
+}
+
+.announcement-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.trending-container {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    gap: 1rem;
+}
+
+.trend-container {
+    background-color: whitesmoke;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.trend {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.trend-username {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
